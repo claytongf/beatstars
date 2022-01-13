@@ -1,0 +1,18 @@
+<div class="row mt-3">
+  <h1 class="text-uppercase">Find Movies & More. <br/> Explore Now.</h1>
+
+  <app-form-search></app-form-search>
+
+  <h3 class="text-uppercase">Explore Movies</h3>
+</div>
+<div class="chip-group">
+  <span class="col chip radius-full bg-gray mt-5" [class.active]="active == 'popular'" (click)="goTo('most-popular')">Most Popular</span>
+  <span class="col chip radius-full bg-gray mx-4" [class.active]="active == 'now_playing'" (click)="goTo('now-playing')">Now Playing</span>
+  <span class="col chip radius-full bg-gray" [class.active]="active == 'top_rated'" (click)="goTo('top-rated')">Top Rated</span>
+</div>
+<app-list infiniteScroll [movies]="movies" [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50" (scrolled)="onScroll()"></app-list>
+<div *ngIf="loading" class="d-flex justify-content-center mt-4">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+.img-thumb{
+  max-width: 350px;
+}
+
+@media (max-width: 767px) {
+  .img-thumb{
+    max-width: 250px;
+  }
+}

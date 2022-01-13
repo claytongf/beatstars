@@ -1,0 +1,21 @@
+<div *ngIf="movie; else spinner" class="row mt-4 justify-content-center justify-content-center">
+  <div class="col-lg-3 col-md-auto col-auto img-thumb">
+    <img [src]="'https://image.tmdb.org/t/p/w500/'+movie.poster_path" [alt]="movie.title" class="img-fluid img-border">
+  </div>
+  <div class="col-lg-9 mt-5">
+    <h1 class="text-uppercase">{{ movie.title }}</h1>
+    <small class="gray-text">
+      {{ movie.release_date | date : "dd/MM/YYYY" }}
+      ({{ movie.original_language.toUpperCase() }}) &middot;
+      {{ getGenres(movie.genres) }}
+    </small>
+    <p class="mt-4">{{ movie.overview }}</p>
+  </div>
+</div>
+<ng-template #spinner>
+  <div class="d-flex justify-content-center mt-3">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</ng-template>

@@ -1,0 +1,22 @@
+@media (max-width: 768px){
+  .chip-sm{
+    width: 60px !important;
+    height: 60px;
+    padding: 5px;
+    text-align: center;
+    line-height: 25px;
+    float: right;
+  }
+  .card-title{
+    margin-top: -5px !important;
+  }
+}
+
+@media (max-width: 576px){
+  .col-img{
+    width: 90px;
+  }
+  .col-body{
+    width: 75%;
+  }
+}

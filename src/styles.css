@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  background-color: black;
+  color: white;
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.text-decoration-none{
+  text-decoration: none !important;
+}
+
+.chip-group{
+  flex-wrap: wrap;
+}
+
+.chip{
+  display: inline-block;
+  padding: 4px 10px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.radius-full{
+  border-radius: 25px;
+}
+
+.no-border{
+  border: none;
+}
+
+.bg-gray{
+  background-color: #262626;
+}
+
+.gray-text{
+  color: #9F9F9F;
+}
+
+.active{
+  background-color: #005FF8 !important;
+}
+
+.yellow-text{
+  color: #FFCC00;
+}
+
+.img-border{
+  border: 3px solid #2A2A2C;
+  border-radius: 10px;
+}
+
+.form-control:focus{
+  background-color: #262626;
+  color: white;
+}
+
+.form-control{
+  color: white;
+}

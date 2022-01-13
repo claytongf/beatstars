@@ -1,0 +1,7 @@
+<form [formGroup]="searchForm" (ngSubmit)="search()">
+  <div class="input-group mt-3 mb-5" style="width: 500px;">
+    <div class="input-group-text bg-gray no-border" style="color: #6C757D;"><i class="bi-search"></i></div>
+    <input type="text" formControlName="search" name="search" class="form-control bg-gray no-border" placeholder="Start typing to search..." aria-label="Start typing to search...">
+    <button class="btn btn-primary" type="submit">Search</button>
+  </div>
+</form>

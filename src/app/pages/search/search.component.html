@@ -1,0 +1,5 @@
+<app-form-search></app-form-search>
+<hr>
+<h1 class="text-uppercase">Search Results</h1>
+<p>Found {{ total }} movies</p>
+<app-list infiniteScroll [movies]="movies" [infiniteScrollDistance]="2" [infiniteScrollThrottle]="40" (scrolled)="onScroll()"></app-list>

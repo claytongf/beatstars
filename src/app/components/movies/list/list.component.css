@@ -1,0 +1,23 @@
+@media (min-width: 1200px){
+  .col-offset{
+    margin-left:3.166666667%
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+  .col-offset{
+    margin-left:5.166666667%
+  }
+}
+
+@media (max-width: 991px){
+  .col-offset{
+    margin-left:6.166666667%
+  }
+}
+
+@media (max-width: 768px){
+  .col-offset{
+    margin-left: 0;
+  }
+}
